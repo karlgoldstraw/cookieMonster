@@ -21,6 +21,14 @@ body {
 
 
 // Karl's bullshit
+.whitebg {
+  background: white;
+  padding: 2em 2em;
+}
+ol {
+  padding-top: 1em;
+}
+
 @media (max-width: 768px) {
 
     thead {
