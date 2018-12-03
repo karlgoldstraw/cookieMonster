@@ -18,3 +18,34 @@ body {
   min-height: 100%;
   min-width: 100%;
 }
+
+
+// Karl's bullshit
+@media (max-width: 768px) {
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      border-bottom: solid 2px #efefef;
+      display: block;
+    }
+
+    td {
+      border-bottom: 1px dotted #efefef;
+      display: block;
+      text-align: left;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: bold;
+        padding-right: 20px;
+      }
+    }
+  }

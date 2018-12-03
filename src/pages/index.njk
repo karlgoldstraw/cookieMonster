@@ -1,38 +1,70 @@
 {% extends "layout.njk" %}
-
-
+{% set title = 'Home' %}
 {% set body_class = 'home' %}
 
 
 {% block content %}
-<div class="nhsuk-care-card">
-  <div class="nhsuk-care-card__heading-container">
-    <h3 class="nhsuk-care-card__heading"><span class="nhsuk-u-visually-hidden">Non-urgent care: </span>Speak to a GP if:</h3>
-  </div>
-  <div class="nhsuk-care-card__content">
-    <ul>
-      <li>you're not sure it's chickenpox</li>
-      <li>the skin around the blisters is red, hot or painful (signs of infection)</li>
-      <li>your child is <a href='#'>dehydrated</a></li>
-      <li>you're concerned about your child or they get worse</li>
-    </ul>
-    <p>Tell the receptionist you think it's chickenpox before going in. They may recommend a special appointment time if other patients are at risk.</p>
-  </div>
+<h1>This is a title in page</h1>
+<p>Here’s a technical explanation of the individual cookies we set and what they do. This page needs redesigning and these groupings are not correct!</p>
+
+
+
+<div class="nhsuk-table__panel-with-heading-tab">
+<h3 class="nhsuk-table__heading-tab">Required cookies</h3>
+<p>Cookies that are neccessary to make the website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
+<div class="nhsuk-table-responsive">
+  <table class="nhsuk-table">
+    <caption class="nhsuk-table__caption">Skin symptoms and possible causes</caption>
+    <thead class="nhsuk-table__head">
+      <tr class="nhsuk-table__row">
+        <th class="nhsuk-table__header" scope="col">Cookie name</th>
+        <th class="nhsuk-table__header" scope="col">Provider</th>
+        <th class="nhsuk-table__header" scope="col">Type</th>
+        <th class="nhsuk-table__header" scope="col">Expiry</th>
+        <th class="nhsuk-table__header" scope="col">Purpose</th>
+      </tr>
+    </thead>
+    <tbody class="nhsuk-table__body">
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell" data-label="Cookie name">.ASPXANONYMOUS</td>
+        <td class="nhsuk-table__cell" data-label="Provider">nhs.uk</td>
+        <td class="nhsuk-table__cell" data-label="Type">HTTP</td>
+        <td class="nhsuk-table__cell" data-label="Expiry">69 days</td>
+        <td class="nhsuk-table__cell" data-label="Purpose">Used to deliver anonymous user details when authorising applications on the website.</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell" data-label="Cookie name">ASP.NET_SessionId</td>
+        <td class="nhsuk-table__cell" data-label="Provider">nhs.uk</td>
+        <td class="nhsuk-table__cell" data-label="Type">HTTP</td>
+        <td class="nhsuk-table__cell" data-label="Expiry">Session</td>
+        <td class="nhsuk-table__cell" data-label="Purpose">Preserves the visitor's session state across page requests.</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell" data-label="Cookie name">AWSELB</td>
+        <td class="nhsuk-table__cell" data-label="Provider">optimizely.com</td>
+        <td class="nhsuk-table__cell" data-label="Type">HTTP</td>
+        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
+        <td class="nhsuk-table__cell" data-label="Purpose">Used to distribute traffic to the website on several servers in order to optimise response times.</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell" data-label="Cookie name">CookieConsent</td>
+        <td class="nhsuk-table__cell" data-label="Provider">nhs.uk</td>
+        <td class="nhsuk-table__cell" data-label="Type">HTTP</td>
+        <td class="nhsuk-table__cell" data-label="Expiry">1 year</td>
+        <td class="nhsuk-table__cell" data-label="Purpose">Stores the user's cookie consent state for the current domain</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell" data-label="Cookie name">csrftoken</td>
+        <td class="nhsuk-table__cell" data-label="Provider">optimizely.com</td>
+        <td class="nhsuk-table__cell" data-label="Type">HTTP</td>
+        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
+        <td class="nhsuk-table__cell" data-label="Purpose">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </div>
 
-{% from 'components/action-link/macro.njk' import actionLink %}
-{{ actionLink({
-  "text": "Find a minor injuries unit",
-  "href": "https://www.nhs.uk/service-search/minor-injuries-unit/locationsearch/551"
-}) }}
-
-
-{% from 'components/promo/macro.njk' import promo%}
-
-{{ promo({
-  "href": "https://www.nhs.uk",
-  "heading": "Save a life: give blood",
-  "description": "Please register today. Donating blood is easy, and saves lives."
-}) }}
+</div>
 
 {% endblock content %}
