@@ -30,11 +30,9 @@ ol {
 }
 
 @media (max-width: 768px) {
-
     thead {
       display: none;
     }
-
     tr {
       border-bottom: solid 2px #d8dde0;
       display: block;
@@ -43,7 +41,6 @@ ol {
         border-bottom: 0;
       }
     }
-
     td {
       border-bottom: 1px dotted #d8dde0;
       display: block;
@@ -60,4 +57,9 @@ ol {
         padding-right: 20px;
       }
     }
+
+    .nhsuk-grid-column-full-width {
+      padding: 0 16px;
+    }
+
   }
