@@ -1,0 +1,65 @@
+{% extends "layout-full.njk" %}
+{% set title = 'Accessible table experiment' %}
+{% set body_class = 'home' %}
+
+
+{% block content %}
+<div class="nhsuk-u-reading-width">
+<h1>Accessible table experiment</h1>
+</div>
+
+
+
+
+<h2>Essential cookies</h2>
+<div class="nhsuk-u-reading-width">
+<p>This is a paragraph of text</p>
+</div>
+
+<div class="nhsuk-panel">
+<div class="nhsuk-table-responsive">
+  <table class="nhsuk-table" role=”table”>
+    <caption class="nhsuk-table__caption">Cookie names and purposes</caption>
+    <thead class="nhsuk-table__head">
+      <tr class="nhsuk-table__row" role="row">
+        <th class="nhsuk-table__header" role="columnheader" scope="col">Cookie name</th>
+        <th class="nhsuk-table__header" role="columnheader" scope="col">Expiry</th>
+        <th class="nhsuk-table__header" role="columnheader" scope="col">Purpose</th>
+      </tr>
+    </thead>
+    <tbody class="nhsuk-table__body">
+      <tr class="nhsuk-table__row" role="row">
+        <td class="nhsuk-table__cell" role="cell" data-label="Cookie name">.ASPXANONYMOUS</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Expiry">69 days</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Purpose">Used to deliver anonymous user details when authorising applications on the website.</td>
+      </tr>
+      <tr class="nhsuk-table__row" role="row">
+        <td class="nhsuk-table__cell" role="cell" data-label="Cookie name">ASP.NET_SessionId</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Expiry">Session</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Purpose">Preserves the visitor's session state across page requests.</td>
+      </tr>
+      <tr class="nhsuk-table__row" role="row">
+        <td class="nhsuk-table__cell" role="cell" data-label="Cookie name">AWSELB</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Expiry">1 day</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Purpose">Used to distribute traffic to the website on several servers in order to optimise response times.</td>
+      </tr>
+      <tr class="nhsuk-table__row" role="row">
+        <td class="nhsuk-table__cell" role="cell" data-label="Cookie name">CookieConsent</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Expiry">1 year</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Purpose">Stores the user's cookie consent state for the current domain</td>
+      </tr>
+      <tr class="nhsuk-table__row" role="row">
+        <td class="nhsuk-table__cell" role="cell" data-label="Cookie name">csrftoken</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Expiry">1 day</td>
+        <td class="nhsuk-table__cell" role="cell" data-label="Purpose">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div><!--nhsuk-panel-->
+
+
+
+
+
+{% endblock content %}
