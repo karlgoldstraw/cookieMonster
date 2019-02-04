@@ -20,11 +20,11 @@
   </title>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/nhsuk-{{latest}}.min.css">
+  <link rel="stylesheet" href="https://nhsuk.github.io/nhsuk-frontend/assets/nhsuk.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Scripts -->
-  <script src="js/nhsuk-{{latest}}.min.js" defer></script>
+  <script src="https://nhsuk.github.io/nhsuk-frontend/assets/nhsuk.js" defer></script>
   <script src="js/jquery-3.3.1.min.js"></script>
 
   <!-- Favicons -->
@@ -54,6 +54,16 @@
 <body class="{{ body_class }}">
 
   {% include 'partials/_header.njk' %}
+
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+        <div class="nhsuk-width-container">
+          <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Cookies</a></li>
+          </ol>
+          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Cookies</a></p>
+        </div>
+      </nav>
 
     <div class="nhsuk-width-container">
       <main class="nhsuk-main-wrapper" id="maincontent">

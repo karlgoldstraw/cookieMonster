@@ -1,222 +1,103 @@
-{% extends "layout-full.njk" %}
-{% set title = 'Home' %}
-{% set body_class = 'home' %}
+{% extends "layout.njk" %}
+{% set title = 'Manage cookies' %}
+{% set body_class = 'page' %}
 
 
 {% block content %}
-<div class="nhsuk-u-reading-width">
-<h1>The cookies that we set on your device</h1>
-</div>
+<h1>Cookies on the NHS website</h1>
+<p>Cookies are files saved on your phone, tablet or computer when you visit a website.</p>
+<p>They store information about how you use the website, such as the pages you visit.</p>
+<p>Cookies are not viruses or computer programmes. They are very small so do not take up much space.</p>
+
+<div class="nhsuk-panel nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-form-group nhsuk-u-margin-bottom-0">
+      <fieldset class="nhsuk-fieldset" id="cookie-preferences-form" aria-describedby="cookie-preferences">
+
+        <h2>Turn cookies on or off</h2>
+        <p>We use 4 main types of cookie on our website. You can choose which cookies you're happy for us to use.</p>
+        <h3>Cookies that make the website work better</h3>
+        <p>These cookies do things like keep the website secure.</p>
+
+        <div class="nhsuk-radios nhsuk-radios--inline nhsuk-u-margin-bottom-6">
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-1" name="example1" type="radio" value="on" checked="">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+              On
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-2" name="example1" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+              Off
+            </label>
+          </div>
+        </div>
 
 
+        <h3>Cookies that remember your settings</h3>
+        <p>These cookies do things like remember pop-ups you’ve seen, so you're not shown them again.</p>
+        <div class="nhsuk-radios nhsuk-radios--inline nhsuk-u-margin-bottom-6">
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-3" name="example2" type="radio" value="on" checked="">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-3">
+              On
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-4" name="example2" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-4">
+              Off
+            </label>
+          </div>
+        </div>
 
 
-<h2>Essential cookies</h2>
-<div class="nhsuk-u-reading-width">
-<p>Cookies that are neccessary to make the website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
-</div>
+        <h3>Cookies that measure website use</h3>
+        <p>These cookies store information about how you use our website, such as what you click on.</p>
+        <div class="nhsuk-radios nhsuk-radios--inline nhsuk-u-margin-bottom-6">
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-5" name="example3" type="radio" value="on" checked="">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-3">
+              On
+            </label>
+          </div>
 
-<div class="nhsuk-panel">
-<div class="nhsuk-table-responsive">
-  <table class="nhsuk-table">
-    <caption class="nhsuk-table__caption">Cookie names and purposes</caption>
-    <thead class="nhsuk-table__head">
-      <tr class="nhsuk-table__row">
-        <th class="nhsuk-table__header" scope="col">Cookie name</th>
-        <th class="nhsuk-table__header" scope="col">Expiry</th>
-        <th class="nhsuk-table__header" scope="col">Purpose</th>
-      </tr>
-    </thead>
-    <tbody class="nhsuk-table__body">
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">.ASPXANONYMOUS</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">69 days</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to deliver anonymous user details when authorising applications on the website.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">ASP.NET_SessionId</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">Session</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Preserves the visitor's session state across page requests.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">AWSELB</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to distribute traffic to the website on several servers in order to optimise response times.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">CookieConsent</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 year</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Stores the user's cookie consent state for the current domain</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">csrftoken</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div><!--nhsuk-panel-->
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-6" name="example3" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-4">
+              Off
+            </label>
+          </div>
+        </div>
 
 
+        <h3>Cookies that help with health campaigns</h3>
+        <p>These cookies do things like tell us if you've seen our adverts on social media, such as
+          Facebook or Twitter.</p>
+        <div class="nhsuk-radios nhsuk-radios--inline nhsuk-u-margin-bottom-6">
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-7" name="example4" type="radio" value="on" checked="">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-3">
+              On
+            </label>
+          </div>
 
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-8" name="example4" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-4">
+              Off
+            </label>
+          </div>
+        </div>
 
-<h2>Site preferences</h2>
-<div class="nhsuk-u-reading-width">
-<p>Cookies that are neccessary to make the website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
-</div>
-
-<div class="nhsuk-panel">
-<div class="nhsuk-table-responsive">
-  <table class="nhsuk-table">
-    <caption class="nhsuk-table__caption">Skin symptoms and possible causes</caption>
-    <thead class="nhsuk-table__head">
-      <tr class="nhsuk-table__row">
-        <th class="nhsuk-table__header" scope="col">Cookie name</th>
-        <th class="nhsuk-table__header" scope="col">Expiry</th>
-        <th class="nhsuk-table__header" scope="col">Purpose</th>
-      </tr>
-    </thead>
-    <tbody class="nhsuk-table__body">
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">.ASPXANONYMOUS</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">69 days</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to deliver anonymous user details when authorising applications on the website.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">ASP.NET_SessionId</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">Session</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Preserves the visitor's session state across page requests.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">AWSELB</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to distribute traffic to the website on several servers in order to optimise response times.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">CookieConsent</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 year</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Stores the user's cookie consent state for the current domain</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">csrftoken</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div><!--nhsuk-panel-->
-
-
-
-
-
-
-
-
-<h2>Website usage</h2>
-<div class="nhsuk-u-reading-width">
-<p>Cookies that are neccessary to make the website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
-</div>
-
-<div class="nhsuk-panel">
-<div class="nhsuk-table-responsive">
-  <table class="nhsuk-table">
-    <caption class="nhsuk-table__caption">Skin symptoms and possible causes</caption>
-    <thead class="nhsuk-table__head">
-      <tr class="nhsuk-table__row">
-        <th class="nhsuk-table__header" scope="col">Cookie name</th>
-        <th class="nhsuk-table__header" scope="col">Expiry</th>
-        <th class="nhsuk-table__header" scope="col">Purpose</th>
-      </tr>
-    </thead>
-    <tbody class="nhsuk-table__body">
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">.ASPXANONYMOUS</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">69 days</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to deliver anonymous user details when authorising applications on the website.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">ASP.NET_SessionId</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">Session</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Preserves the visitor's session state across page requests.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">AWSELB</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to distribute traffic to the website on several servers in order to optimise response times.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">CookieConsent</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 year</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Stores the user's cookie consent state for the current domain</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">csrftoken</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div><!--nhsuk-panel-->
-
-
-
-
-
-
-
-
-
-<h2>Health campaigns</h2>
-<div class="nhsuk-u-reading-width">
-<p>Cookies that are neccessary to make the website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
-</div>
-
-<div class="nhsuk-panel">
-<div class="nhsuk-table-responsive">
-  <table class="nhsuk-table">
-    <caption class="nhsuk-table__caption">Skin symptoms and possible causes</caption>
-    <thead class="nhsuk-table__head">
-      <tr class="nhsuk-table__row">
-        <th class="nhsuk-table__header" scope="col">Cookie name</th>
-        <th class="nhsuk-table__header" scope="col">Expiry</th>
-        <th class="nhsuk-table__header" scope="col">Purpose</th>
-      </tr>
-    </thead>
-    <tbody class="nhsuk-table__body">
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">.ASPXANONYMOUS</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">69 days</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to deliver anonymous user details when authorising applications on the website.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">ASP.NET_SessionId</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">Session</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Preserves the visitor's session state across page requests.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">AWSELB</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Used to distribute traffic to the website on several servers in order to optimise response times.</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">CookieConsent</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 year</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Stores the user's cookie consent state for the current domain</td>
-      </tr>
-      <tr class="nhsuk-table__row">
-        <td class="nhsuk-table__cell" data-label="Cookie name">csrftoken</td>
-        <td class="nhsuk-table__cell" data-label="Expiry">1 day</td>
-        <td class="nhsuk-table__cell" data-label="Purpose">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div><!--nhsuk-panel-->
-
-
+      </fieldset>
+      <button onclick="changeConsent()" type="submit" class="nhsuk-button">
+          Save
+      </button>
+      <p><a href="index-2.html">More details about our cookies</a></p>
+    </div>
+  </div>
 
 {% endblock content %}
