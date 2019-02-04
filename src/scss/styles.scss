@@ -20,7 +20,7 @@ body {
 }
 
 
-// Karl's bullshit
+// Karl's css
 .whitebg {
   background: white;
   padding: 2em 2em;
@@ -28,6 +28,30 @@ body {
 ol {
   padding-top: 1em;
 }
+
+
+.nhsuk-cookie-banner {
+    background: #fff;
+    top: 0;
+    position: relative;
+    box-shadow: 0 0 4px 0 #000;
+    padding: 16px 0 1px 0;
+    width: 100%;
+    z-index: 1;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline;
+        margin-right: 20px;
+      }
+    }
+}
+
+
+
 
 @media (max-width: 768px) {
     thead {
@@ -61,6 +85,9 @@ ol {
         padding-right: 20px;
       }
     }
+
+    //Cookies!
+    .nhsuk-cookie-banner ul li {display: block;}
 
     .nhsuk-grid-column-full-width {
       padding: 0 16px;
